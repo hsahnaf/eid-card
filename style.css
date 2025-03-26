@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@700&display=swap');
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, #ff9a9e, #fad0c4);
+    font-family: 'Noto Sans Bengali', sans-serif;
+    margin: 0;
+}
+
+.card {
+    background: white;
+    padding: 30px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    position: relative;
+    width: 320px;
+}
+
+.moon {
+    width: 50px;
+    height: 50px;
+    background: gold;
+    border-radius: 50%;
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0 0 15px gold;
+    animation: moon-glow 1.5s infinite alternate;
+}
+
+@keyframes moon-glow {
+    0% { box-shadow: 0 0 10px gold; }
+    100% { box-shadow: 0 0 20px gold; }
+}
+
+.eid-text {
+    font-size: 26px;
+    color: #2E2E2E;
+    margin-top: 30px;
+}
+
+.message {
+    font-size: 18px;
+    color: #555;
+    margin-top: 10px;
+    min-height: 50px;
+}
+
+#name {
+    color: #D63384;
+    font-weight: bold;
+      }
